@@ -321,7 +321,7 @@ AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 AWS_REGION = os.getenv("AWS_REGION", "eu-north-1")
 
 # Set API key as env var for boto3 to pick up
-os.environ["AWS_BEARER_TOKEN_BEDROCK"] = os.getenv("BEDROCK_API_KEY")
+os.environ["AWS_BEARER_TOKEN_BEDROCK"] = os.getenv("BEDROCK_API_KEY", "")
 
 # OpenAI Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
