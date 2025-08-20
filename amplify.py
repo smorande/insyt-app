@@ -46,10 +46,6 @@ from langchain_core.tools import tool
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_openai import ChatOpenAI
 
-import os
-# For Amplify deployment
-os.environ.setdefault('AWS_DEFAULT_REGION', 'eu-north-1')
-
 TOKEN_LIMITS = {
     "Quick Search": {
         "min_tokens": 500,
