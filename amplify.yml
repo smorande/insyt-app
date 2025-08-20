@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - pip install -r requirements.txt
+    build:
+      commands:
+        - streamlit run amplify.py --server.headless true --server.port 8080
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
